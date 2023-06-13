@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template - Utilizar como modelo</title>
+    <link rel="stylesheet" href="base.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="menu"><br><br>
+            <ul>
+                <li><a href="paginaprincipal.html">Página Principal</a></li>
+            </ul><br>
+            <ul>
+                <li><a href="sobre.html">Sobre a clínica</a></li>
+            </ul><br>
+            <ul>
+                <li><a href="horario.html">Horário de atendimento</a></li>
+            </ul><br>
+            <ul>
+                <li><a href="contato.html">Contato</a></li>
+            </ul><br>
+        </div>
+
+        <div class="main">
+            <div class="header">
+            <center>
+                <img src="./imagens/contato.jpg" width="300">
+            </center>
+            </div>
+
+            <div class="content">
+                <center>
+                Avenida Hiroshima, 773 | Carandá Bosque<br>
+                Campo Grande - MS | CEP 79036-360<br>
+                Tel: (67)3047-6677 | 3047-6651<br>
+                Cel: (67)9 9604-4323<br><br>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3738.6198420191395!2d-54.5688811255056!3d-20.439719581066267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9486e8fd8f5dea85%3A0xf4cb5a2b64e0e7a5!2sTebet%20Cl%C3%ADnica%20M%C3%A9dica!5e0!3m2!1spt-BR!2sbr!4v1686617394203!5m2!1spt-BR!2sbr" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </center>
+                <article>
+                    <h1> Formulario de Contato</h1>
+                    <p>Preencha os dados abaixo e envie sua mensagem de contato.</p>
+    
+                    <fieldset>
+                        <legend>
+                            <h5>Dados de Contato</h5>
+                        </legend>
+                        <form id="frmInscrição" action="contato.php" method="POST">
+    
+                            <label>Nome:</label><br>
+                            <input type="text" required="required" id="txtNome" maxlength="100" size="50" placeholder="Digite seu nome"><br><br>
+    
+                            <label>E-mail:</label><br>
+                            <input type="email" required="required" size="50" id="txtEmail" placeholder="Digite seu e-mail"><br><br>
+
+                            <label>Assunto:</label><br>
+                            <input type="text" required="required" id="txtNome" maxlength="100" size="50" placeholder="Digite o assunto"><br><br>
+
+                            <label>Mensagem:</label><br>
+                            <textarea cols="48" rows="5" required="required" placeholder="Digite sua mensagem"></textarea><br><br>
+                            
+                            <input id="btnEnviar" type="submit" value="Enviar"/> <button type="reset">Limpar</button>
+                            
+    
+                        </form>
+                    </fieldset>
+                </article>
+            </div>
+
+            <div class="footer"><br><br><br><br><br><br><br>
+                Avenida Hiroshima, 773 | Carandá Bosque
+                Campo Grande - MS | CEP 79036-360
+                Tel: (67)3047-6677 | 3047-6651
+            </div>
+        </div>
+    </div>
+</body>
+</html>
